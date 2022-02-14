@@ -1,0 +1,22 @@
+
+<table class="table myTable">
+    <thead class="miColor">
+      <tr>
+        <th scope="col">EMPRESA</th>
+        <th scope="col">CARGO</th>
+        <th scope="col">FUNCIONES</th>
+        <th scope="col">PERIODO</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+        
+        <tr class="items" *ngFor="let experiencia of experiencias">
+            <td>{{experiencia.empresa}}</td>
+            <td>{{experiencia.puesto}}</td>
+            <td>{{experiencia.definicion}}</td>
+            <td>{{experiencia.duracion}}</td>
+        </tr>      
+
+    </tbody>
+</table>

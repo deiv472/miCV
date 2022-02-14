@@ -1,0 +1,20 @@
+
+<table class="table myTable">
+    <thead class="miColor">
+      <tr>
+        <th scope="col">TÍTULO</th>
+        <th scope="col">CENTRO</th>
+        <th scope="col">AÑO FINALIZACIÓN</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+        
+        <tr class="items" *ngFor="let formacion of formaciones">
+            <td>{{formacion.titulo}}</td>
+            <td>{{formacion.centro}}</td>
+            <td>{{formacion.anyoFin}}</td>
+        </tr>      
+
+    </tbody>
+</table>

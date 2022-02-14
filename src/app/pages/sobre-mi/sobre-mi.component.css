@@ -1,0 +1,70 @@
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    margin: 15px;
+    padding: 25px;
+}
+
+.name   {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #6c757d;
+    flex-grow: 9;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.texto {
+    font-size: 40px;
+}
+
+.foto{
+    flex-grow: 1;
+    margin-right: 10px;
+    align-self: center;
+    padding: 5px;
+}
+
+.pequeña {
+    width: 450px;
+    height: 550px;
+}
+
+.dato {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #6c757d; 
+}
+
+
+/* Responsive layout*/
+@media (max-width: 800px) {
+    .contenedor {
+        flex-direction: column;
+    }
+    .name {
+        flex: 100%;
+        align-self: center;
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+     .foto {
+      flex: 35%;
+      margin-right: 0px;
+      margin-top: 15px;
+    }
+    .pequeña {
+        margin-right: 0px;
+        margin-left: 55px;
+        margin-top: 15px;
+        width: 150px;
+        height: 250px;
+    }
+    .dato {
+        font-size: 12px;
+    }
+    .texto {
+        font-size: 20px;
+    }
+  }

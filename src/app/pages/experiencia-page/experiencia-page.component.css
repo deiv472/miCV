@@ -1,0 +1,14 @@
+.myTable {
+    margin-top: 5px;
+}
+
+.items{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #6c757d;
+    font-size: 15px;    
+}
+
+.miColor{
+    background-color: #6c757d;
+    color: whitesmoke;
+}
