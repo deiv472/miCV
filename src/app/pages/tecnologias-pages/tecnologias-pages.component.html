@@ -10,7 +10,7 @@
     <tbody>
         
         <tr class="items" *ngFor="let tecnologia of tecnologias">
-            <td>{{tecnologia.nombre}}</td>
+            <td class="cen">{{tecnologia.nombre}}</td>
             <td><img src="{{tecnologia.logo}}" alt=""></td>
             <td><mat-progress-bar style="height: 15px;" color="primary" mode="buffer" value={{tecnologia.nivel}}></mat-progress-bar>{{tecnologia.nivel}}%</td>
         </tr>      
