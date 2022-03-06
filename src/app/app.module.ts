@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { SobreMiComponent } from './pages/sobre-mi/sobre-mi.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { ClockComponent } from './pages/clock/clock.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     FormacionPageComponent,
     TecnologiasPagesComponent,
     ExperienciaPageComponent,
-    SobreMiComponent
+    SobreMiComponent,
+    ClockComponent
   ],
   imports: [
     BrowserModule,

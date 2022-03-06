@@ -7,7 +7,7 @@
             LINKEDIN: <a href="www.linkedin.com/in/david-ramos-villa">www.linkedin.com/in/david-ramos-villa</a>
         </p>
     </div>
-    <div class="name">
+    <div class="name" [ngClass]="{'azul':!flag}">
         <h2 class="texto">¿Quién soy?</h2>
         <p>Mi nombre es David. Soy de Madrid, y soy una persona COMPROMETIDA, <br>
         RESPONSABLE, que quiere conseguir lo que se propone, y, con ACTITUD, lo consigo. <br>
@@ -25,5 +25,8 @@
             EMAIL: RAMOSVILLADAVID1@GMAIL.COM <br>
             LINKEDIN: <a href="www.linkedin.com/in/david-ramos-villa">www.linkedin.com/in/david-ramos-villa</a>
         </p>
+    </div>
+    <div>
+        <button (click)="cambiarFlag()" class="boton">Cámbiame el Color!!!</button>
     </div>
 </div>

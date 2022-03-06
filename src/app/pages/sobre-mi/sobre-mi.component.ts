@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SobreMiComponent implements OnInit {
 
+  flag = false;
+
   constructor() { }
 
-  ngOnInit(): void {
+  cambiarFlag(){
+    this.flag = !this.flag;
   }
+
+  ngOnInit(): void {
+    this.cambiarFlag();
+  }
+
+  
 
 }
