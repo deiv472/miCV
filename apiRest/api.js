@@ -3,10 +3,12 @@ const app = express();
 const cors = require('cors');
 const mysql = require('mysql2');
 
+let port = process.env.PORT || 300;
+
 let connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: 'T@ng02021',
+    host: "database-1.cxoou8blftez.us-east-1.rds.amazonaws.com",
+    user: "admin",
+    password: 'Tang02021',
     database: "cv",
 });
 
@@ -98,6 +100,6 @@ app.get('/experiencia', (req, res) => {
 
 /*****************************************************************************************/
 // set port, listen for requests
-app.listen(3000, () => {
-    console.log("Server is running on port 3000.");
+app.listen(port, () => {
+    console.log("Server is running on port 300.");
 });
