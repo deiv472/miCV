@@ -6,9 +6,9 @@ const mysql = require('mysql2');
 let port = process.env.PORT || 300;
 
 let connection = mysql.createConnection({
-    host: "database-1.cxoou8blftez.us-east-1.rds.amazonaws.com",
+    host: "",
     user: "admin",
-    password: 'Tang02021',
+    password: '',
     database: "cv",
 });
 
